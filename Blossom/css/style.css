@@ -406,8 +406,15 @@ section{
 
 }
 
+.AboutLogo{
+  align-items: center;
+  text-align: center
+}
+
 .RotateLogo {
   animation: rotation 24s infinite linear;
+  position: relative;
+  margin: auto;
 }
 
 .RotateLogo:hover {
@@ -417,9 +424,11 @@ section{
 @keyframes rotation {
   from {
     transform: rotate(0deg);
+
   }
   to {
     transform: rotate(359deg);
+
   }
 }
 
