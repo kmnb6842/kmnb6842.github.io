@@ -56,3 +56,4 @@ window.addEventListener("scroll", reveal);
 
 // To check the scroll position on page load
 reveal();
+
