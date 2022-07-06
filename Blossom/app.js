@@ -34,8 +34,8 @@ scene.on('update', e => {
 
 setInterval(() => {
     delay += (scrollpos - delay) * accelamount;
-    video.currentTime = scrollpos;
-}, 90);
+    video.currentTime = delay;
+}, 60);
 
 // FADE IN ANIMATION
 
