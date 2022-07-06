@@ -116,6 +116,64 @@ body {
     height:100vh;
 }
 
+.intro2{
+  height:100vh;
+  display: none;
+  background-image: url(../img/Home/);
+}
+
+.intro2 h1{
+    
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  font-size:80px;
+  color:white;
+  
+}
+
+.intro2 h2{
+  
+  padding-bottom: 20px;
+  font-size: 13px;
+  line-height: 27px;
+  letter-spacing: 1.1px;
+  font-family: 'Noto Serif TC', serif;
+  opacity: 0.5;
+  text-align:center ;
+  color: #fff; 
+  top:80% ;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width:100%;
+}
+
+.intro2 h3{
+  position: absolute;
+  font-size: 21px;
+  line-height: 36px;
+  letter-spacing: 4px;
+  font-family: 'Noto Serif TC', serif;
+  text-align:center;
+  color: #fff;
+  top:30%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width:100%;
+}
+
+
+@media(max-width:768px){
+  .intro{
+    display:none;
+  }
+
+  .intro2{
+    display: block;
+  }
+  
+}
+
 .intro video{
     height: 100%;
     width: 100%;
