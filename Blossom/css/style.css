@@ -114,12 +114,15 @@ body {
 
 .intro{
     height:100vh;
+    display: block;
 }
 
 .intro2{
   height:100vh;
   display: none;
-  background-image: url(../img/Home/);
+  background-image: url(../img/Home/intro2.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .intro2 h1{
@@ -163,13 +166,17 @@ body {
 }
 
 
-@media(max-width:768px){
+@media screen and (max-width: 768px){
   .intro{
     display:none;
   }
 
   .intro2{
     display: block;
+  }
+
+  .scrollmagic-pin-spacer{
+    display: none;
   }
   
 }
