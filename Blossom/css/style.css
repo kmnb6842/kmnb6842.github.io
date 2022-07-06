@@ -363,6 +363,10 @@ section{
   .AboutText{
     width:100%;
   }
+    .RotateLogo {
+      animation: none;
+  }
+
 
 }
 
