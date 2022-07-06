@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="./img/favicon.ico" rel="shortcut icon"/>
+    <title>【花】-Blossom- 臺灣地圖</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600&display=swap');
+
+        path:hover {
+            cursor: pointer;
+            fill: #c1c1c1;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-white justify-content-center" href="./Blossom.html">
+                <img src="./img/logo_hor.png" class="m-2" style="width: 180px;">
+            </a>
+            <button class="navbar-toggler btn btn-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end m-1" id="navbarNavAltMarkup">
+                <ul class="navbar-nav text-white">
+                    <li class="nav-item">
+                        <a class="nav-link navwords" aria-current="page" href="./Blossom.html">首頁 Home&nbsp;&nbsp;</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navwords" href="./Words.html">花語選集 Flower Words&nbsp;&nbsp;</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navwords active" href="./Map.html">臺灣花卉 Taiwan Flowers&nbsp;&nbsp;</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navwords" href="./About.html">關於此站 About &nbsp;&nbsp;</a>
+                    </li>
+
+
+                </ul>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class = "MapBanner">
+        
+    </div>
+
+    <div class="mx-auto mb-3 mt-5 container" style="text-align:center; width:60%; margin:auto">
+        <h1 class="Blossomh1">臺灣花卉</h1>
+        <p class="smallEng">Taiwan Flowers</p>
+        <div style="margin:auto; margin-bottom: 45px;">
+            <p class="blossomp">認識花朵，從身邊開始，<br>臺灣海拔分布高，有眾多的生態系，自然也有了更多花種。<br>可選取縣市區域查看</p>
+        </div>
+    </div>
+
+    <div class="dropdown MapDropdown">
+        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            選擇縣市
+        </button>
+        <ul class="dropdown-menu" id="DropdownLocation" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" data-value="Taipei">臺北市</a></li>
+            <li><a class="dropdown-item" data-value="Taoyuan">桃園市</a></li>
+            <li><a class="dropdown-item" data-value="Taichung">臺中市</a></li>
+            <li><a class="dropdown-item" data-value="Tainan">臺南市</a></li>
+            <li><a class="dropdown-item" data-value="Kaohsiung">高雄市</a></li>
+            <li><a class="dropdown-item" data-value="Hsinchu">新竹縣</a></li>
+            <li><a class="dropdown-item" data-value="HsinchuCity">新竹市</a></li>
+            <li><a class="dropdown-item" data-value="Miaoli">苗栗縣</a></li>
+            <li><a class="dropdown-item" data-value="Changhua">彰化縣</a></li>
+            <li><a class="dropdown-item" data-value="Nantou">南投縣</a></li>
+            <li><a class="dropdown-item" data-value="Yunlin">雲林縣</a></li>
+            <li><a class="dropdown-item" data-value="Chiayi">嘉義縣</a></li>
+            <li><a class="dropdown-item" data-value="Pingtung">屏東縣</a></li>
+            <li><a class="dropdown-item" data-value="Yilan">宜蘭縣</a></li>
+            <li><a class="dropdown-item" data-value="Hualien">花蓮縣</a></li>
+            <li><a class="dropdown-item" data-value="Taitung">臺東縣</a></li>
+
+        </ul>
+    </div>
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-4 p-4 MapDivGroup">
+
+                <div class="MapDiv" id="MapTaipei">
+                    <div class="" style="margin-top: 17%;">
+                        <img src="./img/Map/Taipei-Azalea.jpeg" style="width:100% ;border-radius: 7px">
+                        <br>
+                        <br>
+                        <h3 class="Blossomh-left">杜鵑花</h3>
+                        <div class=>
+                            <div class="" style="float:left">
+                                <p class="MapsmallEng">Azalea</p>
+                            </div>
+                            <div class="d-flex justify-content-end" style="height: 25px;">
+                                <p class="MapLocation">臺北市</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="MapContent">
+                            杜鵑花是臺北市的市花，在台大校園、二二八公園、介壽公園等地，皆可看見杜鵑的身影，杜鵑花朵大而美麗，部分散發芬芳迷人香氣，令早春的杜鵑成為臺北的特色街景。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="MapDiv" id="MapTaoyuan">
+                    <div class="" style="margin-top: 17%;">
+                        <img src="./img/Map/Taoyuan-Peach-Blossom.jpg" style="width:100% ;border-radius: 7px">
+                        <br>
+                        <br>
+                        <h3 class="Blossomh-left">桃花</h3>
+                        <div class=>
+                            <div class="" style="float:left">
+                                <p class="MapsmallEng">Peach Blossom</p>
+                            </div>
+                            <div class="d-flex justify-content-end" style="height: 25px;">
+                                <p class="MapLocation">桃園市</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="MapContent">
+                            清初廣東移民薛啟隆曾在昔日虎茅莊（今桃園區周圍），種植大量桃樹，桃花齊開時，花海如雲，名為桃仔園，乃今之桃園。桃花即成為桃園市的市花。桃花是中國傳統的園林花木，其樹態優美，色彩豔麗，爲早春重要觀花樹種。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="MapDiv" id="MapHsinchu">
+                    <div class="" style="margin-top: 17%;">
+                        <img src="./img/Map/Hsinchu-Camellia.jpg" style="width:100% ;border-radius: 7px">
+                        <br>
+                        <br>
+                        <h3 class="Blossomh-left">山茶花</h3>
+                        <div class=>
+                            <div class="" style="float:left">
+                                <p class="MapsmallEng">Camellia</p>
+                            </div>
+                            <div class="d-flex justify-content-end" style="height: 25px;">
+                                <p class="MapLocation">新竹縣</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="MapContent">
+                            新竹縣選定茶花為縣花以增該縣特色，因該縣茶葉栽植面積及產量均佔全台三分之一以上，馳名國內外。 新竹縣乃農業縣，盛產茶葉，選定茶花正可代表該縣農村欣欣向榮的景象而相得益彰。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="MapDiv" id="MapHsinchuCity">
+                    <div class="" style="margin-top: 17%;">
+                        <img src="./img/Map/Hsinchu-Azalea.jpg" style="width:100% ;border-radius: 7px">
+                        <br>
+                        <br>
+                        <h3 class="Blossomh-left">杜鵑花</h3>
+                        <div class=>
+                            <div class="" style="float:left">
+                                <p class="MapsmallEng">Azalea</p>
+                            </div>
+                            <div class="d-flex justify-content-end" style="height: 25px;">
+                                <p class="MapLocation">新竹市</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="MapContent">
+                            春神翩然來臨時，就是杜鵑花粉墨登場的季節，很自然地成為春天的代名詞。杜鵑花分布極廣，從都市的馬路、安全島上，至三千多公尺的高山上，都能看到它迎風搖曳為大地妝點顏色。杜鵑花能耐貧瘠，抗噪音及空氣污染。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="MapDiv" id="MapMiaoli">
+                    <div class="" style="margin-top: 17%;">
+                        <img src="./img/Map/Miaoli-Sweet-Osmanthus.jpg" style="width:100% ;border-radius: 7px">
+                        <br>
+                        <br>
+                        <h3 class="Blossomh-left">桂花</h3>
+                        <div class=>
+                            <div class="" style="float:left">
+                                <p class="MapsmallEng">Sweet Osmanthus</p>
+                            </div>
+                            <div class="d-flex justify-content-end" style="height: 25px;">
+                                <p class="MapLocation">苗栗市</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="MapContent">為提高居家生活品質，彰顯本縣對綠美化的重視，本府邀請專家學者初選九種花卉，再由縣民於縣府廣場票選，選出桂花作為本縣縣花。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="MapDiv" id="MapTaichung">
+                    <div class="" style="margin-top: 17%;">
+                        <img src="./img/Map/Taichung-Taiwan-Cherry.jpg" style="width:100% ;border-radius: 7px">
+                        <br>
+                        <br>
+                        <h3 class="Blossomh-left">山櫻花</h3>
+                        <div class=>
+                            <div class="" style="float:left">
+                                <p class="MapsmallEng">Taiwan Cherry</p>
+                            </div>
+                            <div class="d-flex justify-content-end" style="height: 25px;">
+                                <p class="MapLocation">臺中市</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="MapContent">
+                            山櫻花是臺灣分佈最廣的櫻花樹種。海拔300-2,000公尺均可生長良好，為昆蟲鳥類重要食物來源之蜜源植物，於八仙山、臺8線公路、石岡、東勢林場、大坑等地區皆可見其蹤跡，新社區亦有大量種植。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="MapDiv" id="MapChanghua">
+                    <div class="" style="margin-top: 17%;">
+                        <img src="./img/Map/Changhua-Chrysanthemum.jpg" style="width:100% ;border-radius: 7px">
+                        <br>
+                        <br>
+                        <h3 class="Blossomh-left">菊花</h3>
+                        <div class=>
+                            <div class="" style="float:left">
+                                <p class="MapsmallEng">Chrysanthemum</p>
+                            </div>
+                            <div class="d-flex justify-content-end" style="height: 25px;">
+                                <p class="MapLocation">彰化縣</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="MapContent">
+                            彰化人推選菊花當它們的縣花﹐也許並不是為了縣民特別喜好菊花﹐不過從某一個角度來看﹐菊花不成為彰化之縣花﹐確也不容易﹐蓋因田尾﹑永靖﹑員林等地的菊花圃﹐菊花的栽培便相當盛行﹐品種也很多。騷人墨客還之與梅﹑蘭﹑竹並稱為「四君子」﹐經常地歌詠和禮讚。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="MapDiv" id="MapYunlin">
+                    <div class="" style="margin-top: 17%;">
+                        <img src="./img/Map/Yunlin-Phalaenopsis.jpg" style="width:100% ;border-radius: 7px">
+                        <br>
+                        <br>
+                        <h3 class="Blossomh-left">蝴蝶蘭</h3>
+                        <div class=>
+                            <div class="" style="float:left">
+                                <p class="MapsmallEng">Phalaenopsis</p>
+                            </div>
+                            <div class="d-flex justify-content-end" style="height: 25px;">
+                                <p class="MapLocation">雲林縣</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="MapContent">
+                            國產切花雲林地區產地是以菊花、切葉類、蘭花為大宗，蝴蝶蘭盛開時像翩翩飛舞的群蝶，是最受歡迎的十大切花之一，蝴蝶蘭代表「幸福」，其花朵色彩豔麗，花姿優雅。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="MapDiv" id="MapChiayi">
+                    <div class="" style="margin-top: 17%;">
+                        <img src="./img/Map/Chiayi-Camel's-foot.jpg" style="width:100% ;border-radius: 7px">
+                        <br>
+                        <br>
+                        <h3 class="Blossomh-left">豔紫荊</h3>
+                        <div class=>
+                            <div class="" style="float:left">
+                                <p class="MapsmallEng">Camel's-foot</p>
+                            </div>
+                            <div class="d-flex justify-content-end" style="height: 25px;">
+                                <p class="MapLocation">嘉義縣</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="MapContent">
+                            「艷紫荊」為本市市花，象徵著市民的熱情，市政建設富庶美麗，葉常綠終年不落，象徵著工商業欣欣向榮，年年成長，目的在期勉市民齊同為市政建設而努力，以創造美與富的大嘉義市。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="MapDiv" id="MapTainan">
+                    <div class="" style="margin-top: 17%;">
+                        <img src="./img/Map/Tainan-Phalaenopsis.jpg" style="width:100% ;border-radius: 7px">
+                        <br>
+                        <br>
+                        <h3 class="Blossomh-left">蝴蝶蘭</h3>
+                        <div class=>
+                            <div class="" style="float:left">
+                                <p class="MapsmallEng">Phalaenopsis</p>
+                            </div>
+                            <div class="d-flex justify-content-end" style="height: 25px;">
+                                <p class="MapLocation">臺南市</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="MapContent">
+                            市花蝴蝶蘭因花型似飛翔的蝴蝶而得名，臺南為蝴蝶蘭生產重鎮，面積占全國之冠，素有「蘭鄉」之美稱，市府於後壁區設置蘭花生技園區，帶動台灣蘭花產業蓬勃發展，並連年舉辦國際蘭展，提供新品種發表展示，將台灣生產之蘭花推向國際。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="MapDiv" id="MapKaohsiung">
+                    <div class="" style="margin-top: 17%;">
+                        <img src="./img/Map/Kaohsiung-Kapok.jpg" style="width:100% ;border-radius: 7px">
+                        <br>
+                        <br>
+                        <h3 class="Blossomh-left">木棉花</h3>
+                        <div class=>
+                            <div class="" style="float:left">
+                                <p class="MapsmallEng">Kapok</p>
+                            </div>
+                            <div class="d-flex justify-content-end" style="height: 25px;">
+                                <p class="MapLocation">高雄市</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="MapContent">
+                            火紅的木棉正代表著熱情的高雄人特質，於是高雄市市花就由木棉脫穎而出。所以在高雄很多地區，都看的到木棉的身影，如四維路、民族一路、河東路、愛河畔、前金、大港埔、林德官、五塊厝等都看的到。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="MapDiv" id="MapPingtung">
+                    <div class="" style="margin-top: 17%;">
+                        <img src="./img/Map/Pingtung-Bougainvillea.jpg" style="width:100% ;border-radius: 7px">
+                        <br>
+                        <br>
+                        <h3 class="Blossomh-left">九重葛</h3>
+                        <div class=>
+                            <div class="" style="float:left">
+                                <p class="MapsmallEng">Bougainvillea</p>
+                            </div>
+                            <div class="d-flex justify-content-end" style="height: 25px;">
+                                <p class="MapLocation">屏東縣</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="MapContent">
+                            臺灣的九重葛長得特別好，尤中南部一帶，不但花開得多，顏色格外艷動人，花期也比北部長。九重葛的品種繁多，有單瓣重瓣斑葉品種，花色有白、紅、粉紅、紫紅、橙、桃紅、淡粉紅等，色彩繽紛。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="MapDiv" id="MapYilan">
+                    <div class="" style="margin-top: 17%;">
+                        <img src="./img/Map/Yilan-Cymbidium.jpg" style="width:100% ;border-radius: 7px">
+                        <br>
+                        <br>
+                        <h3 class="Blossomh-left">國蘭</h3>
+                        <div class=>
+                            <div class="" style="float:left">
+                                <p class="MapsmallEng">Cymbidium</p>
+                            </div>
+                            <div class="d-flex justify-content-end" style="height: 25px;">
+                                <p class="MapLocation">宜蘭縣</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="MapContent">
+                            宜蘭縣政府第260次縣務會議中，通過選定國蘭為宜蘭縣縣花。國蘭，花香而優雅，是許多文人雅士吟詩作畫重要的題材之一，無論其開花與否，都呈現出富有禪意和優雅的意境。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="MapDiv" id="MapNantou">
+                    <div class="" style="margin-top: 17%;">
+                        <img src="./img/Map/Nantou-Plum-Blossom.jpg" style="width:100% ;border-radius: 7px">
+                        <br>
+                        <br>
+                        <h3 class="Blossomh-left">梅花</h3>
+                        <div class=>
+                            <div class="" style="float:left">
+                                <p class="MapsmallEng">Plum blossoms</p>
+                            </div>
+                            <div class="d-flex justify-content-end" style="height: 25px;">
+                                <p class="MapLocation">南投縣</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="MapContent">梅樹係本縣之特產，產量居全台之冠，且梅具有高潔堅貞之性格，其精神正象徵本縣全民不畏寒霜、不懼艱辛，而選為縣花。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="MapDiv" id="MapTaitung">
+                    <div class="" style="margin-top: 17%;">
+                        <img src="./img/Map/Taitung-Phalaenopsis.jpg" style="width:100% ;border-radius: 7px">
+                        <br>
+                        <br>
+                        <h3 class="Blossomh-left">蝴蝶蘭</h3>
+                        <div class=>
+                            <div class="" style="float:left">
+                                <p class="MapsmallEng">Phalaenopsis</p>
+                            </div>
+                            <div class="d-flex justify-content-end" style="height: 25px;">
+                                <p class="MapLocation">臺東縣</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="MapContent">
+                            蝴蝶蘭因花姿宛如蝴蝶翩翩起舞而得名，不僅花美，也被視為幸福的象徵，花期正好是元月至５月左右，因此是年節倍受喜愛的花卉，位在卑南鄉賓朗村的賓朗蝴蝶蘭觀光農園，為讓更多人瞭解台東縣花，歡迎各地遊客前往參觀互相觀摩指教。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="MapDiv" id="MapHualien">
+                    <div class="" style="margin-top: 17%;">
+                        <img src="./img/Map/hualien-Lotus.jpg" style="width:100% ;border-radius: 7px">
+                        <br>
+                        <br>
+                        <h3 class="Blossomh-left">蓮花</h3>
+                        <div class=>
+                            <div class="" style="float:left">
+                                <p class="MapsmallEng">Lotus</p>
+                            </div>
+                            <div class="d-flex justify-content-end" style="height: 25px;">
+                                <p class="MapLocation">花蓮縣</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="MapContent">
+                            取其為花蓮倒唸之諧音，簡單易記。取其純淨，出污泥而不染，與花蓮為台灣最後一片淨土之意涵，有異曲同工之妙。
+                            於民國69年吳水雲縣長任內選定。
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+
+            <div class="col-lg-4 TaiwanMap" style="padding-left: 20px;">
+                <?xml version="1.0" encoding="utf-8"?>
+                <!-- Generator: Adobe Illustrator 24.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 715.7 1295"
+                    style="enable-background:new 0 0 715.7 1295;" xml:space="preserve">
+                    <style type="text/css" >
+                        .st0 {
+                            fill: #E8E8E8;
+                            stroke: #FFFFFF;
+                            stroke-width: 2.5751;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            
+                        }
+                    </style>
+
+                    <path id="Kaohsiung" class="st0"
+                        d="M355.2,714.5l2.4,7.5l-3.9,6.4l-7.2,3.1l-1.8,4.1l1.3,5.2l7.2,4.6l8.1,6.7l3.6,9.8l0.4,3.2
+                    l-20.1,4.9l-8.2,5.3l-5.2,5l-10,6.6l-1.2,7.3l3,7.7l-3.5,6.3l-9.5,5.2l-1,8.9l2.7,12.7l-3.9,17l-0.1,14.4l-5.5,7.6l-10.9,9.3
+                    l-3,12.6l1.7,10.4l3.9,5.9l8,8.2l1.5,6.3l-5,0.6l-6.7-1.2l-5.5,0.3l-10.9,8.6l-7.6-7.1l-9.8-11.5l-9.3,2.3l-8.5,7.6l-16.9-8.5
+                    l-12.1,5.8l-8.2,9.1l-10.3,3.6l-22.9-1.4l-2.2,6.3l-1.7,9.3l-3.3,10.2l0.6,9l-0.1,12.2l-7.3,27.3l-0.1,9.1l3.5,9.7l0.5,10.6
+                    l-10.4,26.4l-3.3-1.4l-2.1,0.1l-2.3,0.9H139l-16.7-13.1l-15.6-22l16.4,19.8l-1.9-9.5l-4.9-9.3l-6.8-7.7l-11.6-10.8l-4.5-5.4
+                    l-2.1-6.2l2.8-5.9l1.4-5.3l-1.9-7.5l-3.5-7.2l-6.3-9.9l-5.9-13.1l-1.3-5.8l0.1-3.9l1.9-4.6l0.4-3.1l-0.6-1.5l-3.5-3l-0.6-3l-3.7-6.3
+                    l-0.9-2.6l-2.7-17.5l7.9-4.8l0.3,0.6l5,11.1l6.2,3.2l20.2,2.8l10.6-1.2l10.8,1.3l5.4-1.9l4.5-3.3l8.4-3.3l8.1-5.7l3.1-7.1l3.9-6.7
+                    l6.8-9.1l7.9-8.2l8.4-7l9.5-9.3l8.4-10.8l12.9-21.9l13.4-19.4l3-8.5l-1.3-8.6l-1.8-5.8l0.1-6.4l4.6-4.5l8.9,0.9l7.5-0.8l15.8-9.4
+                    l5.8-7l10.2-7.9l9.9-5.5l5.4-6.4l4.6-8.8l10.9-8.8l23.8-12.1l5.5,1.3l7.5,2.8l5.4,7.6L355.2,714.5L355.2,714.5z" />
+                    <path id="Pingtung" class="st0"
+                        d="M298.9,927.4l4.5,8.5l0.9,6.3l7,1.7l7.1,4.6l-3.6,17.8l-0.1,6.7l-2.6,6.4l-12.6,5.3l-6.2,3.5
+                    l-9.8,2.1l-7,5.8l-3.1,8.5l-4.8,8.5l-3.9,9.7l-1,18.9l1.5,8.4l2.6,7.9l1.4,9.1v7l3.3,6.4l5.9,7.2l-3.2,4.9l-6.8,4.1l-2.7,5l-0.6,5.8
+                    l3.5,5l4.4,2.2l4,5.7l-0.1,7.3l0.8,7.9l4.1,7.6l5.9,6.3l13.1,6.1l5.8-0.4l1.2,66.4l-2.1,9.4l-3.2,7.7l-4.4,3.2l-5.2,4.8l0.1,10.7
+                    l1.9,11.8l-0.5,7.6l-5.8-8.8l-8.8-6.7l-10-4.5l-10.3-2.4l-0.4,8.5l-3,3l-4.4-1l-4.8-4l-0.3-3.1l1.7-9l-7.1-11.8l-0.6-3.1l0.1-2.7
+                    l0.5-4.1V1213l0.6-4l3.2-4.6l0.6-3.9l-25.6-66.4l-2.1-3.7l-7.1-8.8l-5.7-12.7l-2.6-3.6l-10.6-8.4l-7-3.9l-1.2-4.8l-0.9-1.7l-5.7-3.7
+                    l-12.9-6.2l-5.8-4l-6.2-5.4l-3.3-2.1l10.4-26.4l-0.5-10.6l-3.5-9.7l0.1-9.1l7.3-27.3l0.1-12.2l-0.6-9l3.3-10.2l1.7-9.3l2.2-6.3
+                    l22.9,1.4l10.3-3.6l8.2-9.1l12.1-5.8l16.9,8.5l8.5-7.6l9.3-2.3l9.8,11.5l7.6,7.1l10.9-8.6l5.5-0.3L298.9,927.4L298.9,927.4z" />
+                    <path id="Tainan" class="st0"
+                        d="M231.3,791.2l-3,8.5L215,819.2L202.1,841l-8.4,10.8l-9.5,9.3l-8.4,7l-7.9,8.2l-6.8,9.1l-3.9,6.7
+                    l-3.1,7.1l-8.1,5.7l-8.4,3.3l-4.5,3.3l-5.4,1.9l-10.8-1.3l-10.6,1.2l-20.2-2.8l-6.2-3.2l-5-11.1l-0.3-0.6l-7.9,4.8l-1.3-8.1
+                    l-2.3-4.6l-5-5l6.1-4.4l3.5-7.9l-1.4-6.7l-8.1-1.2l-1.5,2.3l-1.4,4.4l-2.3,3.5l-4.2-0.1l-1.7-3l0.6-9l-1-3.1l-5.3-2.3l-3,2.7
+                    l-2.3,3.7l-3.6,0.9l-3.7-3.2l-0.9-4.5l0.9-4.4l1.4-3l3.9-2.1l4.8-0.6l4-1.3l1.3-3.9l-1.8-1.9l-12.1-3.1v-2.4l10.2-0.1l-1-3.3
+                    l-5.5-4.8l-3.6-4.1l0.9-5.2l3.2-1.9l3.5-1.2l1.8-3.2l-1-5l-1.8-4.1l1.2-3.9l1.8-4.8l3-3.3l-0.6-3l0.6-3l4.2-11.6l2.1-2.2l3.3-0.8
+                    l-4.8-3.2l2.1-5.3l6.7,2.6l11.5,1.7l9.3,2.3l8-3.6l3.2-6.3l7.5-4.6l8.5-6.6l6.1-6.2l7.9-5.9l10-4.5l19.6-3.6l10.9-0.6l9.3,3.1
+                    l5.2,3.1l2.7,5.4l2.2,6.6l12.7,13l1.3,9.7l-2.3,18.3l2.1,5.9l5.8,4.5h4.9l6.8-3.1l6.4-0.8l4.8,1.4L231.3,791.2L231.3,791.2z" />
+                    <path id="HsinchuCity" class="st0" d="M335.2,240.3l-0.3,0.3l-5.9,1.4l-5.7-2.2l-3.5-4.9l-5.5-3.3l-8.9-3.5l1.5-5.3l7.1-14.7l2.8-3.9
+                    l0.9-1.9v-2.2l-0.9-2.4l-1.4-2.8l1.9-3.9l2.3-2.3l10.7,4.6l19.4,6.2l7,3.6l4.9,5l2.4,4.8l-1.3,4.6l-3.1,1.8l-6.6,1.2l-7.6,3.1
+                    l-4.4,5.5l-3,7.2L335.2,240.3L335.2,240.3z" />
+                    <path id="Hsinchu" class="st0"
+                        d="M488.2,284.8l-3,8.4l-1.8,6.1l0.8,5.7l-4.9,7.5l-18,18.3l-5.5,13.5l-3.6-1l-13.6,1.3l-1,0.8
+                    l-0.8-6.3l-5.9-10l-4.2-4.2l-1.7-5.7l-6.4-5.2l-16.1,4.1l-6.2-0.6l-8.8,0.6l-9.9,2.7l-5.3-1.3l1.2-6.6l1.7-5.9l-1.3-5.2l-1.3-3.7
+                    l1.3-4l1-4.5l0.4-5l-0.9-6.7l-5-4.4l-15.6-7.3l-7.7-5.8l-5-5.7l-5.7-14.3l3.1-4l3-7.2l4.4-5.5l7.6-3.1l6.6-1.2l3.1-1.8l1.3-4.6
+                    l-2.4-4.8l-4.9-5l-7-3.6l-19.4-6.2l-10.7-4.6l1.9-3l0.8-5l1.2-3.7l2.6-3.7l3.5-2.7l3.2-1.2l-0.3-1.5l0.9-3.7l2.8-7.9l2.7-4.2l4,1.4
+                    l17.6-1.3l5.9,4l5.2,11.2l6.4,2.6l5.5,1.5l5.3,2.6l8.8,2.8l4.6,5.4l-1.4,7.5l4.5,4.8l8.4,2.7l5.4,4l4,4l4.9,0.9l5-0.4l4.4,4.5
+                    l3.3,5.8l5.5,2.8l4.4,3.3l0.5,6.4l2.1,9.4l-2.4,10l-5.9,8.4l0.6,5.5l6.7,5l8,4.9l7.1,1.2l5.2,3.7l9.4,5.3L488.2,284.8L488.2,284.8z" />
+                    <path id="Yilan" class="st0" d="M607,385.1h-1.4l-14.3-2.2l-23.8-14.3l-4.9,1.2l-3.1,7.7l-6.3,5.8h-8.4l-10.7-4.1l-19.3-4.9
+                    l-8.4-4l-3.2-2.7l-7.6-6.1h-6.3l-6.1,3l-5.2,0.8l-4.8-3.2l-5.7-3.3l-6.3-1.3l-1.8-4.9l0.8-7.1l-4.6-1.3l5.5-13.5l18-18.3l4.9-7.5
+                    l-0.8-5.7l1.8-6.1l3-8.4l0.6-1.9l5-2.1l4.2,0.8l4.4-1.7l2.8-4.9l-4-16l7-5l4-1.2l7.3-2.1l6.3-2.3l4.9-4.2l6.4-4.5l8.5-4.1l5-3.6
+                    l-0.5-2.6l-1.3-4.1l-0.3-5.4l2.6-6.3l6.1-5.2l4.9-3l16.7-6.8l17.4-10.4l8-2.4l6.4-4.6l4-6.4l4.2-5.3l4.8-2.6l4.5-1.5l5.9-3.7
+                    l2.1-4.9l-3.2-4.6l1.8-3.7l14.4-3l4.8-3.2l10.8-5.7l7.6-1.7l4.2,2.4l1,1.4l-15.5,7.7l-7.1,6.1l-24.1,29.4l-3.7,6.2l-3,8.8l-2.1,9.9
+                    l-0.6,9.8l0.4,9.5l4.2,20l-0.3,5.2l-1.9,5l0.3,10.4l4.5,8.1l8.4,5.2l9.8,1.8v2.3l-4.1-0.4l-4,0.4l-3.3,1l-2.4,1.8l3.5,6.4l1.7,8.4
+                    l-1,7.2l-7.7,4.4l-0.5,3.2l0.9,3.9l2.2,3.5l0.8,3.6l-3.2,3.1l-8,4.6l-9,10.3l-0.4,4.1l0.6,9l-1.5,3.3l-1.7,3l-1,4.1l-0.6,8.2
+                    l-0.8,2.1l-1.3,1.7l-0.6,1.8L607,385.1L607,385.1z" />
+                    <path id="Miaoli" class="st0" d="M335.2,240.3l5.7,14.3l5,5.7l7.7,5.8l15.6,7.3l5,4.4l0.9,6.7l-0.4,5l-1,4.5l-1.3,4l1.3,3.7
+                    l1.3,5.2l-1.7,5.9l-1.2,6.6l5.3,1.3l9.9-2.7l8.8-0.6l6.2,0.6l16.1-4.1l6.4,5.2l1.7,5.7l4.2,4.2l5.9,10l0.8,6.3l-4.8,3.3l-2.3,7.2
+                    l-6.3,2.6l-6.8-0.1l-5.4,3.9l-5.9,5.7l-7.6,4.1l-14.9,11.8l-8.8,3.7l-11.5,6.1l-7-2.7l-6.4-7.2l-7.7-3.1l-12.7-1l-7.1,4.2l-1.2,9.5
+                    l-6.7,3.6l-15.6,0.9l-14.9-8.6l-8.5-1.5l-9.4-4.6l-19.4-14.3l-8.1-7.1l-6.1-6.4l-11.8-18.4l9.3-10.4l2.4-5.2l1.2-8.5l2.8-7.2
+                    l7.6-13.4l2.1-8.1l1.9-3.5l8.8-2.6l2.4-2.7l1.4-3.3l1.8-3.2l5.4-5.5l5.9-4.4l7.2-1.9l9.1,1.7l-1.2-7l3.5-4.8l4.8-4.9l2.4-7.3l1-2.4
+                    l4.6-2.3l0.4-1.7l8.9,3.5l5.5,3.3l3.5,4.9l5.7,2.2l5.9-1.4L335.2,240.3L335.2,240.3z" />
+                    <path id="Taoyuan" class="st0" d="M512.3,252.9l-4,1.2l-7,5l4,16l-2.8,4.9l-4.4,1.7l-4.2-0.8l-5,2.1l-0.6,1.9L482,282l-9.4-5.3
+                    l-5.2-3.7l-7.1-1.2l-8-4.9l-6.7-5l-0.6-5.5l5.9-8.4l2.4-10l-2.1-9.4l-0.5-6.4l-4.4-3.3l-5.5-2.8l-3.3-5.8l-4.4-4.5l-5,0.4l-4.9-0.9
+                    l-4-4l-5.4-4l-8.4-2.7l-4.5-4.8l1.4-7.5l-4.6-5.4l-8.8-2.8l-5.3-2.6l-5.5-1.5l-6.4-2.6l-5.2-11.2l-5.9-4l-17.6,1.3l-4-1.4l11.5-18.3
+                    l8.9-10.7l9.3-7.9l23.7-7.9l5.5-3.5l4.8-4.1l5.8-3.2l11.6-4.1l25.9-4.6l5.4,5.9l8.1,3.9l6.1,4l4.1,3.6l5.3,1.3l5.4,2.8l6.6,9.7
+                    l0.6,5.3l-1.3,5.4l-4.2,4.4l-16.9,5l-4.8,5.2l0.3,8l-1.3,7.5l1.3,6.6l7,6.6l1.3,6.6l-1.7,8.6l6.6,3.7l9.5-0.5l6.4,2.6l10.9,15.8
+                    l-1.9,6.8l-4,4.8l1,6.7l1.8,7.2l11.5,10.9L512.3,252.9L512.3,252.9z" />
+                    <path id="Changhua" class="st0" d="M236,498.6l0.1,4.6l-5.5,2.1L229,509l0.6,5.2l-2.6,5.9l-2.1,7l-0.1,7.3l-1.5,8.5l-1.2,17.3
+                    l2.7,8.1l4.6,4.2l5,1.8l7.2,3.7l-1.3,4.5l-4.9,1.9l-3.2,3l-3.1,2.1l-1.3,0.9l-15.5-3.1l-7.5,0.1l-15.7-7.7l-25.4-3l-14.9-5.7
+                    l-8.5-2.3l-9.8-0.5l-28.3,3.3l-9.8-5.7l1-1.8l2.1-9.1l1.5-3.9l9.1-8.8l2.6-3.6l3.5-10l5.4-9.9l7.3-20.7l3.5-6.1l3.9-3.9l3.2-2.2
+                    l2.8-1.4l2.1-1.8l0.8-3.9l1.5-3.6l6.6-5.2l1.5-3.9l0.8-13l1.2-3.6l3.5-3.3l14.5-17l7.5,2.4l5.2,4.5l3.5,8.1l1.3,9.8l5.8,7l15.3,4.5
+                    l5.5,4.6l4.1,6.4l2.6,5.2l0.1,5.2l1.5,4.2l5.5,1l7,4.5V498.6L236,498.6z" />
+                    <path id="Hualien" class="st0" d="M607,385.1l0.8,1l2.1,3.7l0.3,1.4l-1.8,3.1l-7.5,7.3l-8,11.1l-6.1,4.8l-1.8,2.6l0.9,2.7l-1.2,1.9
+                    l-8.5,6.6l-3.2,3.1l-3.6,7.7l-3.7,15.7l-9.5,14l-1.9,5.7l0.3,6.1l2.3,6.7l1.9,3l1.7,1.3l1,1.8l0.1,4.1l-1.4,4.6l-4.8,7.5l-0.9,4.5
+                    l-0.5,8.2l-4.1,21l-8.2,21.9l-10.3,51.6l-6.2,12.6L511,715l-4.5-1.3l-13.9,6.7l-5,7l2.2,8.9l0.8,8.9l-4.6,8.9l-4.4,6.7l-3.5,8.5
+                    l-3.1,10.8l-4.8,9.9l-6.2,17l-4,7.9l0.1,8.6l-1.2,8l-8.4,4.8l-10.6-1.4L425,822.2l-11.8-20.6l-7.3-1.9l-8.1-1.2l-6.4-6.2l-7.9-3.7
+                    l-10-3.6l-6.4-10.4l-1.5-9.5l-0.4-3.2l-3.6-9.8l-8.1-6.7l-7.2-4.6l-1.3-5.2l1.8-4.1l7.2-3.1l3.9-6.4l-2.4-7.5l7.7-4.5l4-3.6l-2.2-8
+                    l1.9-3.5l1.9-5.2l6.7-5l9.5-2.1l9.5-0.4l6.8-6.1l1.7-10.9l5.2-6.7l9.8-3.6l5.8-4l2.1-6.6l4.1-16.2l1.5-10.8l-1.2-9.3l-1.5-7
+                    l-4.1-5.3l-2.7-5.2l7.3-12.1l0.3-4.8l3.2-9l5-10.9l3.9-11.3l2.1-12.7l0.8-9.8l-2.3-5.8l-2.6-4.2l3-9.8l6.6-13.8l10.3-13.4l0.4-5
+                    l-1.9-5.8l-6.7-4.4l-3.7-4l-0.3-12.7l4.8-3.7l8.5-2.8l6.7-3.1l-0.3-4.8l-1.8-8l3.6-2.6l1.5-2.7l4.4-2.2l4-4.9l1.7-6.6l3.9-6.4
+                    l9.7-6.1l3.1-8l0.5-5.4l6.1-6.3l3.2,2.7l8.4,4l19.3,4.9l10.7,4.1h8.4l6.3-5.8l3.1-7.7l4.9-1.2l23.8,14.3l14.3,2.2L607,385.1
+                    L607,385.1z" />
+                    <path id="Nantou" class="st0" d="M464.9,418.7l1.8,8l0.3,4.8l-6.7,3.1l-8.5,2.8l-4.8,3.7l0.3,12.7l3.7,4l6.7,4.4l1.9,5.8l-0.4,5
+                    l-10.3,13.4l-6.6,13.8l-3,9.8l2.6,4.2l2.3,5.8l-0.8,9.8l-2.1,12.7l-3.9,11.3l-5,10.9l-3.2,9l-0.3,4.8l-7.3,12.1l2.7,5.2l4.1,5.3
+                    l1.5,7l1.2,9.3l-1.5,10.8l-4.1,16.2l-2.1,6.6l-5.8,4l-9.8,3.6l-5.2,6.7l-1.7,10.9l-6.8,6.1l-9.5,0.4l-9.5,2.1l-6.7,5l-1.9,5.2
+                    l-1.9,3.5l2.2,8l-4,3.6l-7.7,4.5l-0.9-2.6l-5.4-7.6l-7.5-2.8l-5.5-1.3l-1.2-0.3l-33-0.3l-9.8-1.8l-1.4-4.9l-0.5-7.6l-3.5-8.4
+                    l-1.5-6.2l3.9-6.6l0.4-6.8l-6.6-3.6l-5.3-1.5l-8.8-3.3l-7.9-0.9l-3.3-4.5l-10.6,1.2l-8.8,2.6l-7.5-3.2l-5.2-6.1l1.2-7.3l2.4-6.7
+                    l-1.3-9.9l1.3-9.3l2.6-6.1l-2.4-9.3l3.1-2.1l3.2-3l4.9-1.9l1.3-4.5l-7.2-3.7l-5-1.8l-4.6-4.2l-2.7-8.1l1.2-17.3l1.5-8.5l0.1-7.3
+                    l2.1-7l2.6-5.9L229,509l1.5-3.7l5.5-2.1l-0.1-4.6l5.5,0.3l23,3.2l5.4-0.8l6.4-6.2l9.8-18.5l4.8-10.9l8.2-3.9l13,1.8l7.7-0.3l7.5-9.9
+                    l3.9-2.4l11.5,8.6l4.5-1.2l3.3-7.1l6.1-5l8.5,0.1l6.4-2.4l10.2-9.8l6.6-3.7l5.7-1l11.3-6.1l8-0.3l8.1-1.3l14.3-5.7l5.9-0.4l6.1,1.3
+                    L464.9,418.7L464.9,418.7z" />
+                    <path id="Taichung" class="st0" d="M437.5,345.2l1-0.8l13.6-1.3l3.6,1l4.6,1.3l-0.8,7.1l1.8,4.9l6.3,1.3l5.7,3.3l4.8,3.2l5.2-0.8
+                    l6.1-3h6.3l7.6,6.1l-6.1,6.3l-0.5,5.4l-3.1,8l-9.7,6.1l-3.9,6.4l-1.7,6.6l-4,4.9l-4.4,2.2l-1.5,2.7l-3.6,2.6l-17.3-1.7l-6.1-1.3
+                    l-5.9,0.4l-14.3,5.7l-8.1,1.3l-8,0.3l-11.3,6.1l-5.7,1l-6.6,3.7l-10.2,9.8l-6.4,2.4l-8.5-0.1l-6.1,5l-3.3,7.1l-4.5,1.2l-11.5-8.6
+                    l-3.9,2.4l-7.5,9.9l-7.7,0.3l-13-1.8l-8.2,3.9l-4.8,10.9l-9.8,18.5l-6.4,6.2l-5.4,0.8l-23-3.2l-5.5-0.3v-1.8l-7-4.5l-5.5-1l-1.5-4.2
+                    l-0.1-5.2l-2.6-5.2l-4.1-6.4l-5.5-4.6l-15.3-4.5l-5.8-7l-1.3-9.8l-3.5-8.1l-5.2-4.5l-7.5-2.4l0.8-1l1-4.2l4.2-3.5l2.8-8.4l3.5-15.8
+                    l12-20.7l3.6-12.7l4.4-7.1l17.1-19.1l11.8,18.4l6.1,6.4l8.1,7.1l19.4,14.3l9.4,4.6l8.5,1.5l14.9,8.6l15.6-0.9l6.7-3.6l1.2-9.5
+                    l7.1-4.2l12.7,1l7.7,3.1l6.4,7.2l7,2.7l11.5-6.1l8.8-3.7l14.9-11.8l7.6-4.1l5.9-5.7l5.4-3.9l6.8,0.1l6.3-2.6l2.3-7.2L437.5,345.2
+                    L437.5,345.2z" />
+                    <path id="Yunlin" class="st0" d="M229.3,589.5l2.4,9.3l-2.6,6.1l-1.3,9.3l1.3,9.9l-2.4,6.7l-1.2,7.3l5.2,6.1l7.5,3.2l8.8-2.6
+                    l10.6-1.2l3.3,4.5h-0.6l-0.4,6.4v4.4l-5.2,1.7l-15.1,3.1l-8.1,0.8l-3.1-5l-6.1-4.4l-10.7,3.1l-4.8,0.6l-16.2-5.9l-6.4-7.6l-6.8-5.9
+                    l-8.9,0.5l-16.2,3l-9.3,2.6l-21,12.1l-4.9,4.9l-5.7,3.1l-9,7.3l-6.8,1l-2.7,3.9l-2.2,6.3l-5,4.1l-7.9-0.1l-10.7-6.1l-14.9,1.8
+                    l5.9-6.7l-0.3-21.1l0.9-15.8l3.6-12.6l5.5-9.9l1.7-12.9l3-11.3l1.7-3.9l7.9-10.4l1.4-3.6l0.9-1.9l7.2-5.5l1-2.1l9.8,5.7l28.3-3.3
+                    l9.8,0.5l8.5,2.3l14.9,5.7l25.4,3l15.7,7.7l7.5-0.1l15.5,3.1L229.3,589.5L229.3,589.5z" />
+                    <path id="Taitung" class="st0"
+                        d="M306.7,1155.1l-5.8,0.4l-13.1-6.1l-5.9-6.3l-4.1-7.6l-0.8-7.9l0.1-7.3l-4-5.7l-4.4-2.2l-3.5-5
+                    l0.6-5.8l2.7-5l6.8-4.1l3.2-4.9l-5.9-7.2l-3.3-6.4v-7l-1.4-9.1l-2.6-7.9l-1.5-8.4l1-18.9l3.9-9.7l4.8-8.5l3.1-8.5l7-5.8l9.8-2.1
+                    l6.2-3.5l12.6-5.3l2.6-6.4l0.1-6.7l3.6-17.8l-7.1-4.6l-7-1.7l-0.9-6.3l-4.5-8.5l5-0.6l-1.5-6.3l-8-8.2l-3.9-5.9l-1.7-10.4l3-12.6
+                    l10.9-9.3l5.5-7.6l0.1-14.4l3.9-17l-2.7-12.7l1-8.9l9.5-5.2l3.5-6.3l-3-7.7l1.2-7.3l10-6.6l5.2-5l8.2-5.3l20.1-4.9l1.5,9.5l6.4,10.4
+                    l10,3.6l7.9,3.7l6.4,6.2l8.1,1.2l7.3,1.9l11.8,20.6l15.1,12.5l10.6,1.4l8.4-4.8l1.2-8l-0.1-8.6l4-7.9l6.2-17l4.8-9.9l3.1-10.8
+                    l3.5-8.5l4.4-6.7l4.6-8.9l-0.8-8.9l-2.2-8.9l5-7l13.9-6.7l4.5,1.3l-5.9,34l-2.8,6.3l-9.1,12.1l-3.3,6.3l-2.7,7.9l-1.9,14.7l0.3,13.1
+                    l-1.3,12.5l-6.3,12.7l-2.7,2.7l-6.1,4.5l-2.8,2.8l-1.3,3l-2.2,7.5l-6.2,10.8l-3.7,16.9l-2.7,7.6l-13.3,19.1l-1.7,3.5l-17.9,15.2
+                    L413,933l-0.5,3.5l0.8,8L413,948l-1.5,4.1l-2.8,4.5l-6.1,7.9l-6.1,5.8l-20.7,13.8l-13.9,15.3l-3.5,1.8l-2.7,3.5l-6.7,17.4l-3.3,6.4
+                    l-10.3,12.9l-4.2,7.7l-2.4,15.8l-6.2,21.6l-12.2,21.5l-1.8,7.3l-2.2,20.7L306.7,1155.1L306.7,1155.1z" />
+                    <path id="Taipei" class="st0"
+                        d="M688.9,133.1l-11.2,5.5l-1-1.4l-4.2-2.4l-7.6,1.7l-10.8,5.7l-4.8,3.2l-14.4,3l-1.8,3.7l3.2,4.6l-2.1,4.9
+                    l-5.9,3.7l-4.5,1.5l-4.8,2.6l-4.2,5.3l-4,6.4l-6.4,4.6l-8,2.4L579,198.7l-16.7,6.8l-4.9,3l-6.1,5.2l-2.6,6.3l0.3,5.4l1.3,4.1
+                    l0.5,2.6l-5,3.6l-8.5,4.1l-6.4,4.5l-4.9,4.2l-6.3,2.3l-7.3,2.1l-3.2-7L497.6,235l-1.8-7.2l-1-6.7l4-4.8l1.9-6.8l-10.9-15.8l-6.4-2.6
+                    l-9.5,0.5l-6.6-3.7l1.7-8.6l-1.3-6.6l-7-6.6l-1.3-6.6l1.3-7.5l-0.3-8l4.8-5.2l16.9-5l4.2-4.4l1.3-5.4l-0.6-5.3l-6.6-9.7l-5.4-2.8
+                    l-5.3-1.3l-4.1-3.6l-6.1-4l-8.1-3.9l-5.4-5.9l14.4-2.7l6.2-2.3l7.9-6.7l2.4-1.2l2.8-0.5h4l4.5,1.4l2.4,3.5l1.5,3.5l1.9,2.1l2.2-5.5
+                    l-2.3-3.6l-7.5-7.6l-4-2.4l1.2-3.5l2.3-1.9l2.4-1.2l1-1.3l2.7-6.6l4.1-7.6l8.5-7.6l12.4-6.3l14.2-3.2l13.9,1.5l5.8,4.4l12.9,18.3
+                    l4.6,9.5l1.5-0.6l3.5-0.9l3.9-0.5l2.8,0.8l-0.1,1.2l-1.4,1.7l-1.3,2.3l0.1,2.8l1.4,1.5l3,2.2l0,0h0l1.8,1.2l3.1,3.5l5,1.8l14.4,3.6
+                    l0,0v0l44.5,10.8l4.1,2.6l-2.1,4.8l-0.5,3.7l0.9,6.7l3.1,11.2l3.3,5.3l2.8,1.2l9-1.3l4.6,0.5l5.4,1.4l4.8,2.4L688.9,133.1z" />
+                    <path id="Chiayi" class="st0" d="M335.9,700.2l-23.8,12.1l-10.9,8.8l-4.6,8.8l-5.4,6.4l-9.9,5.5l-10.2,7.9l-5.8,7l-15.8,9.4l-7.5,0.8l-8.9-0.9
+                    l-4.6,4.5l-0.1,6.4l1.8,5.8l1.3,8.6l-10.8-1.3l-4.8-1.4l-6.4,0.8l-6.8,3.1h-4.9l-5.8-4.5l-2.1-5.9l2.3-18.3l-1.3-9.7L178,741
+                    l-2.2-6.6l-2.7-5.4l-5.2-3.1l-8-2.7l-12.3,0.2l-19.6,3.6l-10,4.5l-7.9,5.9l-6.1,6.2l-8.5,6.6l-7.5,4.6l-3.2,6.3l-8,3.6l-9.3-2.3
+                    l-11.5-1.7l-6.7-2.6l4.9-0.4l4.2-1.8l1.8,0.6l-1.2-4.1l-2.8,2.1l-2.3-0.6l-3.2-0.1v-4.2l3.1-7.2l4.8-0.4l7,0.1l-4.8-13.5l-5.3-10.3
+                    l2.4-4.8v-2.4l-4-1.9l0.5-2.3l2.3-2.6l1.2-3.3l5.2-6.7l-10.9,0.6l-0.3-11.2l14.9-1.8l10.7,6.1l7.9,0.1l5-4.1l2.2-6.3l2.7-3.9l6.8-1
+                    l9-7.3l5.7-3.1l4.9-4.9l21-12.1l9.3-2.6l16.2-3l8.9-0.5l6.8,5.9l6.4,7.6l16.2,5.9l4.8-0.6l10.7-3.1l6.1,4.4l3.1,5l8.1-0.8l15.1-3.1
+                    l5.2-1.7v-4.4l0.4-6.4h0.6l0,0l7.9,0.9l8.8,3.3l5.3,1.5l6.6,3.6l-0.4,6.8l-3.9,6.6l1.5,6.2l3.5,8.4l0.5,7.6l1.4,4.9l9.8,1.8l33,0.3
+                    L335.9,700.2z" />
+                </svg>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid Blossomfooter p-5" style="margin-top: 150px;">
+            <div style="text-align:center; width:100% ;margin:auto;">
+                <img src="./img/logo_ver gray.png" style="height: 68px; margin:20px">
+                <hr>
+                <a href="./Blossom.html" class="m-2">Home</a>
+                <a href="./Words.html" class="m-2">Flower Words</a>
+                <a href="./Map.html" class="m-2">Taiwan Flowers</a>
+                <a href="./About.html" class="m-2">About</a>
+                <br>
+                <br>
+                <p style="font-size:14px; color:#a2a2a2">&copy; 2022 【花】Blossom </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+<script>
+
+
+
+    $(document).ready(function () {
+
+        $(`#MapTaipei`).show(); //先顯示地圖台北縣花的部分
+
+
+        $(`.st0`).click(function () {  //當地圖任意區塊被點選時
+            var location = this.id      //設定location變數為 被選取區塊的id
+            $(".MapDiv").fadeOut(200);  //將原本縣市的地圖區塊隱藏
+            $(`#Map` + location).delay(200).fadeIn(200); //使用字串內變數 將id為"#Map+地圖區塊id" 的div顯示出來
+        });
+
+
+    });
+
+
+    $('.dropdown-menu a').click(function () {
+        var dropdownlocation = $(this).data('value');
+        $(".MapDiv").hide();
+        $(`#Map` + dropdownlocation).show();
+    });
+
+</script>
+
+
+</html>
