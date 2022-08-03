@@ -1,0 +1,88 @@
+.indexp3 {
+  margin-top: 15px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  color:  rgb(0, 90, 175);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  transform: translate(-40%, -50%);
+}
+.scroll-downs {
+  position: absolute;
+  top: 80vh;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 2px;
+  padding: 8px 8px;
+  height: 15px;
+  border: 1.5px solid rgb(0, 90, 175);
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color:  rgb(0, 90, 175);
+  animation-name: scroll;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(10px); opacity: 0;}
+}
+
+.indexanimate {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -99;
+  }
+
+  
+  .indexanimate img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  
+    #animation-bg {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    background: #FFF url(../img/indexanimation/index-01.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 700px;
+    mix-blend-mode: screen;
+  }
+
+  .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+  }

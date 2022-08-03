@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+
+
+/* 全域設定 */
+
+
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* 通用設定 */
+.indexh1 {
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 70px;
+    color: rgb(0, 90, 175);
+}
+
+.indexh2 {
+    margin-top: 25px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: rgb(0, 90, 175);
+}
+
+.indexh3 {
+    margin-top: 25px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(0, 90, 175);
+}
+
+.indexp {
+    margin-top: 30px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: rgb(90, 90, 90);
+}
+
+.indexp2 {
+    margin-top: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: rgb(90, 90, 90);
+}
+
+.indexp3 {
+    margin-top: 30px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+.px-30 {
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 600px;
+}
+
+@media only screen and (max-width:992px) {
+    .px-30 {
+        width: 90%;
+    }
+
+}
+
+.px-10 {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.vh-10 {
+    height: 10vh;
+}
+
+.vh-50 {
+    height: 50vh;
+}
+
+.vh-30 {
+    height: 30vh;
+}
+
+.show100 {
+    width: 100%;
+    height: 100%;
+}
+
+/* Banner */
+.newsBanner {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/news/architecture.jpg');
+    background-color: rgb(255, 255, 255);
+    background-position: center;
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    
+
+}
+
+.newsBanner img {
+
+    width: 100px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+/* 最新消息 */
+
+.newsMain {
+
+    background-position: top center, bottom center;
+    background-color: #f3f3f3;
+    background-size: contain, contain;
+    background-repeat: no-repeat;
+    padding-bottom: 150px;
+    padding-top: 50px;
+}
+
+.Carousel {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.carouselImage {
+
+    overflow: hidden;
+    display: grid;
+}
+
+.carouselContent {
+    padding: 40px;
+}
+
+.carouselImage img {
+    max-width: 120%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+    transform: translateX(-5%);
+}
+
+
+.carouselCard {
+    height: 500px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    overflow-y: auto;
+}
+
+@media only screen and (max-width:992px) {
+
+    .indexh3 {
+        margin-top: 0px;
+    }
+
+    .carouselCard {
+        height: 70vh;
+    }
+
+    .carouselImage {
+        height: 35%;
+    }
+
+    .carouselContent {
+        padding: 25px;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    .carouselCard {
+        height: 80vh;
+    }
+}
+
+.carouselCardImage img {
+
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .carouselCardImage {
+        width: 100%;
+    }
+
+    .carouselCardImage img {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+}
+
+.carouselCardContent {
+    float: left;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 40px;
+}
+
+.carouselCardContent h4 {
+    margin: 5px 0;
+}
+
+.carousel-item {
+    position: relative;
+    float: left;
+
+}
+
+/* 固定幻燈片高度為 50vh */
+/* .carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+}
+
+.carousel-item .row{
+    height: 50vh;
+} */
+
+/* .carousel-item img{
+
+    height: 100%;
+    width: auto;
+    object-position: center;
+    overflow-x: hidden;
+    object-fit: cover;
+} */
+
+/* 箭頭區塊調整為 width: 10%; */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 10%;
+    text-align: center;
+    border: none;
+
+    transition: opacity 0.15s ease;
+}
+
+/* 左右箭頭調整成30px */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    ;
+}
+
+/* fill那邊改成#005aaf(志宇設定的藍色) */
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23005aaf' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23005aaf' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
+}
+
+.carousel-indicators {
+    height: 20px;
+    /* 控制列 height: 20px; */
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 10%;
+    /* 調整為10% */
+    margin-left: 10%;
+    /* 調整為10% */
+    list-style: none;
+    /* border: 1px solid red; */
+}
+
+.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 3px;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: 0;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity 0.6s ease;
+}
+
+/* 新增控制button藍色方塊樣式 */
+.indicators {
+    height: 10px;
+    width: 10px;
+    margin: 5px;
+    background-color: #005aaf;
+    border: none;
+}
+
+
+/* 服務項目 */
+
+.newsServices {
+    background-color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 0;
+    border-radius: 0.25rem;
+    height: 250px;
+    width: auto;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.card-img,
+.card-img-bottom {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    background-color: rgba(0, 90, 175, .7);
+    margin: 1em;
+    border-radius: 0.25rem;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.card-img-overlay .indexh3 {
+    margin-top: 5px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.card-img-overlay .indexp {
+    margin-top: 30px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #fff;
+}
+
+.card-img-overlay a {
+    color: #fff;
+}
+
+.card-img-overlay:hover {
+    opacity: 1;
+}
+
+
+/* 客戶個案 */
+.newsCase {
+    background-color: #f3f3f3;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.newsCard {
+    height: 400px;
+
+}
+
+.videobox {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+}
+
+@media only screen and (max-width: 992px) {
+    .videobox {
+        left: 54%;
+        margin-top: 20px;
+        padding-bottom: 56.25%;
+        transform: translateX(-50%);
+
+    }
+
+}
+
+.videobox iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.card-img-overlay .indexh2 {
+    margin-top: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: #fff;
+}
+
+.rec300 {
+    height: 300px;
+    width: 300px;
+    /* border: 1px solid #818181; */
+}
+
+.center {
+    text-align: center;
+    width: 80%;
+    height: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 1px solid #818181; */
+}
+
+
+.center2 {
+    width: 100%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 1px solid #818181; */
+}
+
+.routerImg{
+    width: 100%;
+    height:180px;
+    background-color: #ffffff;
+    
+}
+
+.routerImg div{
+    width:100%;
+    height:100%;
+}
+
+.routerImg:hover{
+    background-color: #f0f0f0;
+}
+
+.routerImg img{
+    width:100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.cooperateInfo{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.cooperateInfo div{
+    height:100px;
+    width:100px;
+    background-color: #005aaf;
+    text-align: center;
+    color: #ffffff;
+    font-size: large;
+    border-radius: 5px;
+    margin-right:10px;
+    margin-top: 10px;
+}
+.cooperateInfo p{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.cooperateTitle{
+    margin-top: 17px;
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: rgb(0, 90, 175);
+}
+
+.cooperateDefault{
+    margin-top: 10px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: rgb(161, 161, 161);
+}
+
+.cooperatePhone{
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .Cooperate {
+        align-items: center;
+        text-align: center;
+        padding: 20px
+    }
+
+    .rec300 {
+        transform: translateX(-50%);
+        left: 50%;
+        width: 400px
+    }
+
+    .center {
+        padding-left: 0%;
+    }
+
+    #app{
+        display:none;
+    }
+
+    .cooperatePhone{
+        display: block;
+    }
+}
+
+/*產品資訊*/
+.newsProduct {
+    padding-top: 30px;
+}
